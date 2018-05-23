@@ -5,15 +5,23 @@ function navigation($highlight) {
     $start = '';
     $kontakt = '';
     $blogg = '';
+    $posta = '';
+    $loggain = '';
 
     if($highlight == 'Start') {
         $start = 'class="highlight"';
     }
+    elseif($highlight == 'Blogg') {
+        $blogg = 'class="highlight"';
+    }
+    elseif($highlight == 'Posta') {
+        $posta = 'class="highlight"';
+    }
     elseif($highlight == 'Kontakt') {
         $kontakt = 'class="highlight"';
     }
-    elseif($highlight == 'Blogg') {
-        $blogg = 'class="highlight"';
+    elseif($highlight == 'loggain') {
+        $loggain = 'class="highlight"';
     }
 
     echo '
@@ -21,7 +29,9 @@ function navigation($highlight) {
             <ul>
                 <li><a ' . $start . ' href="index.php">Start</a></li>
 			    <li><a ' . $blogg . ' href="index.php?page=blogg">Blogg</a></li>
-			    <li><a ' . $kontakt . ' href="index.php?page=kontakt">Kontakt</a></li>
+                <li><a ' . $posta . ' href="index.php?page=posta">Posta</a></li>
+                <li><a ' . $kontakt . ' href="index.php?page=kontakt">Kontakt</a></li>
+                <li style="float:right"><a ' . $loggain . ' href="index.php?page=loggain">Logga in</a></li>
 		    </ul>
 	    </nav>';
 }

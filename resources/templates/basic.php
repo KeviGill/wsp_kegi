@@ -9,6 +9,7 @@ navigation($header);
 
 //MVC - Model View Controller
 echo '<div class="content">';
+echo $error;
 echo $content;
 echo '</div>';
 
