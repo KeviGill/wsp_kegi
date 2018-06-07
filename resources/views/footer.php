@@ -5,11 +5,14 @@
         <!-- +=================+ -->
         <!-- |   FOOTER AREA   | -->
         <!-- +=================+ -->
-        <footer>
-            <p></p>
-        </footer>
-        <!-- +=================+ -->
-    </div>
+<footer>
+    <div class="content"><p id="datum"></p></div>
+    <script>
+        var d = new Date();
+        document.getElementById("datum").innerHTML = d;
+    </script>
+</footer>
+    <!-- +=================+ -->
     <!-- +=================+ -->
     <!-- | JAVASCRIPT AREA | -->
     <!-- +=================+ -->
