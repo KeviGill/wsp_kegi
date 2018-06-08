@@ -73,6 +73,29 @@ nav ul li a:hover {
     background-color: white;
 }
 
+.ml10 {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+}
+
 div.post {
     /*Ger inläggen en fin liten kant runt sig.*/
 	border: 1px solid #000;

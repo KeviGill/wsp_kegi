@@ -8,7 +8,7 @@ require ('resources/views/header.php');
 navigation($header);
 
 //Content
-echo '<div class="content"><h2>Alla blogginlägg</h2> ' . $error;
+echo '<div class="content"><h2 class="ml10"><span class="text-wrapper"><span class="letters">Alla blogginlägg</span></span></h2> ' . $error;
 
 foreach ($model as $key => $value) {
     echo '<div class="post">';
